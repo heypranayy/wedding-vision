@@ -1,0 +1,26 @@
+{
+  "colors": {
+    "heritage-emerald": "#1a484c",
+    "heritage-emerald-deep": "#123336",
+    "heritage-emerald-light": "#255f64",
+    "heritage-sand": "#FAF7F2",
+    "heritage-sand-dark": "#F3EDE2",
+    "heritage-gold": "#C5A880",
+    "heritage-gold-dark": "#9E825D",
+    "heritage-charcoal": "#242424",
+    "heritage-charcoal-deep": "#181818",
+    "heritage-muted": "#686461",
+    "border-subtle": "rgba(26, 72, 76, 0.15)",
+    "border-gold": "rgba(197, 168, 128, 0.4)"
+  },
+  "typography": {
+    "font-serif": "Cormorant Garamond, Georgia, serif",
+    "font-sans": "Plus Jakarta Sans, system-ui, -apple-system, sans-serif",
+    "font-mono": "JetBrains Mono, Menlo, monospace",
+    "tracking-luxury": "0.18em"
+  },
+  "shadows": {
+    "regal": "0 20px 45px -15px rgba(18, 51, 54, 0.18)",
+    "elevation": "0 10px 30px -10px rgba(36, 36, 36, 0.08)"
+  }
+}

@@ -1,0 +1,96 @@
+/* Self-hosted modern typography via fontsource */
+@import '@fontsource/cormorant-garamond/300.css';
+@import '@fontsource/cormorant-garamond/400.css';
+@import '@fontsource/cormorant-garamond/600.css';
+@import '@fontsource/cormorant-garamond/700.css';
+@import '@fontsource/cormorant-garamond/400-italic.css';
+
+@import '@fontsource/plus-jakarta-sans/300.css';
+@import '@fontsource/plus-jakarta-sans/400.css';
+@import '@fontsource/plus-jakarta-sans/500.css';
+@import '@fontsource/plus-jakarta-sans/600.css';
+@import '@fontsource/plus-jakarta-sans/700.css';
+
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/500.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand Tokens as CSS Variables */
+  --color-heritage-emerald: #1a484c;
+  --color-heritage-emerald-deep: #123336;
+  --color-heritage-emerald-light: #255f64;
+  --color-heritage-sand: #FAF7F2;
+  --color-heritage-sand-dark: #F3EDE2;
+  --color-heritage-gold: #C5A880;
+  --color-heritage-gold-dark: #9E825D;
+  --color-heritage-charcoal: #242424;
+  --color-heritage-charcoal-deep: #181818;
+  --color-heritage-muted: #686461;
+  --border-subtle: rgba(26, 72, 76, 0.15);
+  --border-gold: rgba(197, 168, 128, 0.4);
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', Menlo, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: var(--color-heritage-sand);
+    color: var(--color-heritage-charcoal);
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Accessible focus indicators */
+  :focus-visible {
+    outline: 2px solid var(--color-heritage-emerald);
+    outline-offset: 3px;
+  }
+}
+
+/* Jaipur Jaali & Architectural Motifs */
+.jaali-border-pattern {
+  background-image: radial-gradient(var(--border-gold) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.jaali-watermark {
+  background-image: radial-gradient(rgba(26, 72, 76, 0.05) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+/* Horizontal Smooth Carousel with hide-scrollbar */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Strict A11y & Performance: Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Prevent animation on the LCP element */
+.lcp-hero-img {
+  animation: none !important;
+  transform: none !important;
+  will-change: auto !important;
+}

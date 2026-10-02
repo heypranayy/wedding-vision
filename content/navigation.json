@@ -1,0 +1,38 @@
+{
+  "brand": {
+    "name": "Weddings Vision",
+    "location": "Jaipur • Rajasthan",
+    "logoAlt": "Weddings Vision Luxury Wedding Planners Jaipur",
+    "logoDark": "/assets/Untitled-design-4.svg",
+    "logoLight": "/assets/Untitled-design-6.svg"
+  },
+  "links": [
+    {
+      "label": "Venue Advisory",
+      "href": "/venue-consultation"
+    },
+    {
+      "label": "Wedding Planning",
+      "href": "/wedding-consultation"
+    },
+    {
+      "label": "Palace Venues",
+      "href": "/#venue-showcase"
+    },
+    {
+      "label": "Heritage & Team",
+      "href": "/about"
+    }
+  ],
+  "contact": {
+    "phone": "+91 99292 52073",
+    "phoneRaw": "+919929252073",
+    "whatsappUrl": "https://wa.me/919929252073?text=Hello%20Weddings%20Vision%20team,%20I%20am%20planning%20a%20wedding%20in%20Rajasthan%20and%20would%20like%20to%20consult%20with%20your%20planning%20team.",
+    "email": "info@weddingsvision.com"
+  },
+  "actions": {
+    "bookDesktop": "Book Consultation",
+    "bookMobile": "Book",
+    "bookBadge": "5.0 ★ Rated (10 Verified Reviews)"
+  }
+}

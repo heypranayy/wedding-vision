@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: initial;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #1a484c;
+    color: #FAF7F2;
+  }
+}
+
+/* Lenis Recommended CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Custom Architectural & Luxury Utilities */
+@layer utilities {
+  .hairline-b {
+    border-bottom: 1px solid rgba(26, 72, 76, 0.12);
+  }
+  .hairline-t {
+    border-top: 1px solid rgba(26, 72, 76, 0.12);
+  }
+  .hairline-gold {
+    border-color: rgba(197, 168, 128, 0.35);
+  }
+  .hairline-emerald {
+    border-color: rgba(26, 72, 76, 0.15);
+  }
+}
+
+/* Subtle decorative arch motif */
+.heritage-arch-mask {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}

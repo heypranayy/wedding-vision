@@ -1,0 +1,318 @@
+{
+  "hero": {
+    "eyebrow": "Jaipur • Rajasthan Wedding Planning & Heritage Venue Advisory",
+    "promisePrefix": "Rajasthani heritage meets",
+    "promiseEmphasis": "modern design.",
+    "subhead": "Book your 60-Minute Rajasthan Venue Advisory (₹2,999) or 90-Minute Wedding Planning Blueprint (₹4,999) directly with our senior Jaipur planners. Objective intelligence, zero secret kickbacks.",
+    "ctaPrimary": "Book a Consultation",
+    "ctaSecondary": "Chat on WhatsApp",
+    "whatsappIntent": "hero_general_inquiry",
+    "whatsappUrl": "https://wa.me/919929252073?text=Hello%20Weddings%20Vision%20team,%20I%20am%20planning%20a%20wedding%20in%20Rajasthan%20and%20would%20like%20to%20speak%20with%20a%20senior%20planner.",
+    "proof": {
+      "rating": "5.0 / 5.0 ★ Rated (10 Verified Reviews)",
+      "weddingWireUrl": "https://www.weddingwire.in/wedding-planners/wedding-vision--e405719/reviews",
+      "award": "WeddingWire Wedding Awards 2024 Winner",
+      "guarantee": "100% Fee Credited to Full Planning"
+    },
+    "media": {
+      "image": "/assets/0V9A7363.webp",
+      "alt": "Royal Rajasthani Heritage Wedding by Weddings Vision Jaipur",
+      "badgeTitle": "Verified Credentials",
+      "badgeSubtitle": "Wedding Awards 2024 Winner",
+      "badgeRating": "5.0 / 5.0 ★",
+      "badgeSource": "WeddingWire Verified",
+      "locationTag": "Jaipur Headquarters"
+    }
+  },
+  "twoPaths": {
+    "eyebrow": "The Two Paid Pathways • Highest Priority",
+    "heading": "Choose Your Strategic Entry Point",
+    "description": "Tailored 1-on-1 private video strategy sessions with our senior planners. Every rupee invested is 100% credited toward your full wedding planning management fee.",
+    "panelA": {
+      "id": "venue",
+      "tag": "Path A • Venue Scouting",
+      "duration": "60 Minutes",
+      "title": "Find My Venue",
+      "subtitle": "Rajasthan Palace & Heritage Resort Advisory",
+      "audience": "Ideal if you have no venue booked yet. Avoid losing lakhs in hidden DG power charges, 10 PM sound fines, and outside vendor royalties.",
+      "deliverables": [
+        "Custom shortlist of 3–5 verified palaces matching your pax & budget",
+        "Hidden surcharge audit: power backups, sound curfew, F&B minimums",
+        "Post-call Executive PDF Dossier + direct vetted sales contacts"
+      ],
+      "priceINR": 2999,
+      "priceFormatted": "₹2,999",
+      "priceNote": "(All-Inclusive)",
+      "creditBadge": "100% Credited",
+      "ctaText": "Book Venue Advisory (₹2,999)"
+    },
+    "panelB": {
+      "id": "wedding",
+      "tag": "Path B • Master Strategy",
+      "duration": "90 Minutes",
+      "title": "Plan My Wedding",
+      "subtitle": "Comprehensive Wedding Planning Blueprint",
+      "audience": "Ideal if you have a venue or need full financial and aesthetic architecture. We turn vague Pinterest pins into a rigorous, budget-accountable roadmap.",
+      "deliverables": [
+        "Itemized budget model across 200–800 guests (decor, catering, artists)",
+        "Mandap & celebration styling moodboard uniting heritage with modern lines",
+        "12-Month execution roadmap & recommended vendor matrix"
+      ],
+      "priceINR": 4999,
+      "priceFormatted": "₹4,999",
+      "priceNote": "(All-Inclusive)",
+      "creditBadge": "100% Credited",
+      "ctaText": "Book Planning Blueprint (₹4,999)"
+    },
+    "proof": {
+      "title": "100% Fee Credit Guarantee",
+      "text": "Your session fee is completely credited against our Full Wedding Planning retainer if engaged within 45 days.",
+      "pledge": "Zero Secret Broker Kickbacks"
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "Architectural Methodology",
+    "heading": "How Your Consultation Works",
+    "description": "Three disciplined steps engineered to replace guesswork with concrete logistical clarity.",
+    "steps": [
+      {
+        "stepNum": "01",
+        "tag": "Click to Start",
+        "title": "Pick Slot & Outline Brief",
+        "description": "Select an available video time slot on our calendar and choose quick chips for your target season and guest count. Takes under 60 seconds.",
+        "isCta": true,
+        "actionText": "Select Your Slot Now",
+        "serviceType": "venue"
+      },
+      {
+        "stepNum": "02",
+        "tag": "Video Strategy",
+        "title": "1-on-1 Video Session with Senior Planner",
+        "description": "Private Google Meet call with Hemraj or our senior team. We dissect venue contracts, evaluate sound curfew limits, and build your custom budget model.",
+        "footerNote": "Conducted personally • High-definition video",
+        "isCta": false
+      },
+      {
+        "stepNum": "03",
+        "tag": "Deliverable",
+        "title": "Receive Executive Strategy Dossier",
+        "description": "Within 24–36 hours, receive a comprehensive PDF with your property shortlist, direct sales POCs, budget allocations, and negotiation clauses.",
+        "footerNote": "Delivered straight to WhatsApp & Email",
+        "isCta": false
+      }
+    ],
+    "proof": "Conducted personally by Senior Planner Hemraj • Over a decade of Jaipur palace logistics"
+  },
+  "proofStrip": {
+    "eyebrow": "Verifiable Client Experiences",
+    "heading": "Real Reviews with Authentic Dates",
+    "ctaText": "Read all 10 verified reviews on WeddingWire",
+    "ctaUrl": "https://www.weddingwire.in/wedding-planners/wedding-vision--e405719/reviews",
+    "reviews": [
+      {
+        "client": "Pooja & Siddharth",
+        "date": "October 2024",
+        "rating": "5.0 ★",
+        "venue": "Jaipur Palace Wedding",
+        "quote": "Weddings Vision saved us over ₹6 Lakhs on venue power generator overages and sound curfews that the hotel sales desk conveniently neglected to mention. Truly objective advisors.",
+        "isStale": false
+      },
+      {
+        "client": "Ananya & Kabir (NRI UK)",
+        "date": "July 2024",
+        "rating": "5.0 ★",
+        "venue": "Udaipur Destination Wedding",
+        "quote": "Planning our celebration from London was stressful until we booked the 90-minute Blueprint session. The line-item budget dossier Hemraj sent was our single source of truth.",
+        "isStale": false
+      },
+      {
+        "client": "Meera & Rohan",
+        "date": "November 2023",
+        "rating": "5.0 ★",
+        "venue": "Samode Heritage Haveli",
+        "quote": "Exceptional decor execution and impeccable royal hospitality for our 250 guests. Transparent vendor billing down to every single rupee.",
+        "isStale": true,
+        "staleTag": "Historical Season Review (Nov 2023)"
+      }
+    ],
+    "proof": {
+      "award": "WeddingWire India Annual Wedding Awards 2024 Winner",
+      "authentication": "All reviews authenticated via verified third-party couple accounts"
+    }
+  },
+  "services": {
+    "eyebrow": "Full-Scale Wedding Stewardship",
+    "heading": "The 6 Core Planning Capabilities",
+    "description": "Architectural coordination and heritage hospitality for families seeking uncompromised execution across Rajasthan.",
+    "items": [
+      {
+        "title": "Full Wedding Planning",
+        "description": "End-to-end design, vendor contracting, budget accountability, and timeline execution from concept to bidaai.",
+        "scope": "Master Stewardship"
+      },
+      {
+        "title": "Destination Wedding Logistics",
+        "description": "Airport hospitality concierge, charter transport, room block allocations, and welcome desks across Jaipur, Udaipur, and Jodhpur.",
+        "scope": "Rajasthan-Wide Hospitality"
+      },
+      {
+        "title": "Event Design & Royal Décor",
+        "description": "Architectural mandap structures, bespoke floral installations, antique brass illumination, and contemporary minimalist finishes.",
+        "scope": "Architectural Aesthetics"
+      },
+      {
+        "title": "Guest Management & Royal Protocol",
+        "description": "Traditional Rajasthani dhol/nagada arrivals paired with digital RSVPs, luggage tracking, and round-the-clock guest desks.",
+        "scope": "White-Glove Hospitality"
+      },
+      {
+        "title": "Catering & Culinary Planning",
+        "description": "Coordination between royal Rajasthani halwais (Dal Baati Churma, Ker Sangri, Ghevar) and luxury banquet gourmet chefs.",
+        "scope": "Menu Engineering"
+      },
+      {
+        "title": "Entertainment & Heritage Artistry",
+        "description": "Curated Kalbelia ensembles, Manganiyar vocalists, Sufi bands, and celebrity DJ coordination with verified sound permits.",
+        "scope": "Sound & Heritage Live Acts"
+      }
+    ],
+    "proof": {
+      "text": "Zero Hidden Agency Markups • All Vendor Contracts Billed at Actual Cost",
+      "cta": "Consult on Full Wedding Planning →"
+    }
+  },
+  "venueShowcase": {
+    "eyebrow": "Regional Palace Directory",
+    "heading": "Rajasthan Venue Showcase",
+    "description": "Sourced from verified property audits across Jaipur, Udaipur, Jodhpur, and Neemrana.",
+    "cardCta": "Get Venue Options",
+    "cardPlaceholderNote": "*Est. subject to dates",
+    "proof": "All shortlisted properties audited for 10:00 PM Rajasthan Outdoor Sound Regulations & Generator Load Capacity."
+  },
+  "realWeddings": {
+    "eyebrow": "Documented Production Archive",
+    "heading": "Real Rajasthan Weddings",
+    "description": "Explore authentic parameters from past celebrations. Click to pre-select these parameters in your consultation.",
+    "cardCta": "Plan Something Similar",
+    "proof": "Delivered with zero unapproved budget overages. 100% vendor invoice transparency.",
+    "items": [
+      {
+        "id": "cs-jaipur-palace",
+        "city": "Jaipur",
+        "venueName": "Palace Heritage Celebration",
+        "guestCount": 350,
+        "guestCountDisplay": "350 Guests",
+        "budgetBracket": "₹75L – ₹1.2 Crore",
+        "highlightScope": "Mughal garden acoustic transition to sound-isolated royal ballroom past 10:00 PM.",
+        "heroImage": "/assets/0V9A7363.webp",
+        "isPlaceholderData": true,
+        "placeholderTag": "[PLACEHOLDER_CASE_STUDY_JAIPUR]"
+      },
+      {
+        "id": "cs-udaipur-lake",
+        "city": "Udaipur",
+        "venueName": "Lakefront Royal Intimate",
+        "guestCount": 150,
+        "guestCountDisplay": "150 Guests",
+        "budgetBracket": "₹50L – ₹80 Lakhs",
+        "highlightScope": "Private boat ghat arrivals, antique brass floating mandap, and multi-cuisine royal banquet.",
+        "heroImage": "/assets/Untitled-design-17-700x737.jpg",
+        "isPlaceholderData": true,
+        "placeholderTag": "[PLACEHOLDER_CASE_STUDY_UDAIPUR]"
+      },
+      {
+        "id": "cs-jodhpur-fort",
+        "city": "Jodhpur",
+        "venueName": "Sandstone Fortress Grandeur",
+        "guestCount": 500,
+        "guestCountDisplay": "500 Guests",
+        "budgetBracket": "₹1.5Cr – ₹2.5 Crore",
+        "highlightScope": "Multi-level fortress illumination, Kalbelia welcome procession, and zero budget overages.",
+        "heroImage": "/assets/Untitled-design-18-700x737.jpg",
+        "isPlaceholderData": true,
+        "placeholderTag": "[PLACEHOLDER_CASE_STUDY_JODHPUR]"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Clarity & Radical Honesty",
+    "heading": "Answers to Essential Questions",
+    "description": "Everything you need to know about our paid consultations, fee credits, and booking terms.",
+    "items": [
+      {
+        "q": "Why should I pay for a consultation instead of getting a free quote?",
+        "a": "Most wedding brokers offer 'free quotes' because they take massive 15%–25% secret kickbacks from venues and vendors, pushing you toward venues that pay them the highest cut. Weddings Vision is 100% independent: we never accept kickbacks. Our paid sessions deliver unfiltered insider intelligence on sound curfews, hidden generator costs, and contract clauses. Best of all, 100% of your consultation fee is credited against our full planning retainer if you book with us within 45 days."
+      },
+      {
+        "q": "What is your refund and rescheduling policy?",
+        "a": "We understand family schedules change. You may reschedule your consultation anytime up to 24 hours prior to the call with zero penalty. Furthermore, because your fee is 100% credited against full planning services, your payment is completely risk-free."
+      },
+      {
+        "q": "What exactly happens during the consultation call?",
+        "a": "In the 60-Minute Venue Advisory (₹2,999), we audit your guest count, budget, and season against verified Rajasthan venues, exposing hidden hotel surcharges and curfew realities, followed by an Executive PDF Shortlist. In the 90-Minute Planning Blueprint (₹4,999), we build your itemized financial model (decor, F&B, sound, photography) and 12-month timeline roadmap."
+      },
+      {
+        "q": "Do I need to have a venue booked before contacting you?",
+        "a": "Not at all. In fact, consulting with us before signing a venue contract is the most cost-effective decision you can make. Path A (Venue Advisory) is specifically engineered for couples who have not yet signed a venue deposit to protect them from unfavorable clauses."
+      },
+      {
+        "q": "Are consultations conducted online or in person?",
+        "a": "Both. For out-of-station and NRI clients (US, UK, UAE, Australia), we host high-definition Google Meet video calls with flexible time slots. If you are in Jaipur, you are welcome to schedule an in-person session at our corporate headquarters on the 6th Floor of Mahima Trinity Mall, Sodala."
+      }
+    ],
+    "proof": {
+      "address": "Jaipur Office Walk-in Consultations Available at Mahima Trinity Mall, Sodala.",
+      "whatsappPrompt": "Still Have Questions? WhatsApp a Planner Free →",
+      "whatsappUrl": "https://wa.me/919929252073?text=Hi%20Weddings%20Vision,%20I%20have%20a%20question%20regarding%20planning%20my%20wedding."
+    }
+  },
+  "finalCta": {
+    "eyebrow": "Begin With Objective Intelligence",
+    "heading": "Reserve Your 1-on-1 Strategy Session Today.",
+    "description": "Choose your advisory focus below. 100% of your fee is credited against our full wedding planning management fee.",
+    "ctaVenue": "Book Venue Advisory (₹2,999)",
+    "ctaWedding": "Book Planning Blueprint (₹4,999)",
+    "ctaWhatsApp": "WhatsApp Senior Planner",
+    "whatsappUrl": "https://wa.me/919929252073?text=Hello%20Senior%20Planner%20Hemraj,%20I%20am%20exploring%20a%20wedding%20in%20Rajasthan%20and%20would%20like%20to%20chat.",
+    "proof": [
+      "100% Fee Credited to Full Planning",
+      "5.0 ★ Rated (10 Verified Reviews)",
+      "Razorpay 256-Bit SSL Encrypted"
+    ]
+  },
+  "footer": {
+    "eyebrow": "Architectural Wedding Advisory",
+    "heading": "Rajasthani heritage meets modern design.",
+    "description": "Jaipur-based luxury wedding planning and independent heritage venue advisory. We eliminate broker markups, enforce legal sound curfews, and orchestrate timeless palace celebrations.",
+    "address": "603, 6th Floor, Mahima Trinity Mall, Swej Farm Rd, Sodala, Jaipur 302019",
+    "phone": "+91 99292 52073",
+    "phoneRaw": "+919929252073",
+    "email": "info@weddingsvision.com",
+    "socials": {
+      "instagram": "https://www.instagram.com/weddingvisionbyrc/",
+      "facebook": "https://www.facebook.com/weddingvisionbyrc/"
+    },
+    "creditTerms": "*100% credited toward full planning if booked within 45 days.",
+    "copyright": "All rights reserved. Zero hidden commissions.",
+    "badges": [
+      "GST & Contract Verified",
+      "Jaipur • Udaipur • Jodhpur",
+      "UPI & Razorpay Secured"
+    ]
+  },
+  "mobileBar": {
+    "callLabel": "Call",
+    "whatsappLabel": "WhatsApp",
+    "bookTitle": "Book Advisory",
+    "bookSubtitle": "From ₹2,999 • UPI"
+  },
+  "exitPrompt": {
+    "eyebrow": "Free Rajasthan Insider Dossier",
+    "heading": "Planning a Rajasthan Palace Wedding?",
+    "description": "Before you commit lakhs in venue advances, get our 2026 Rajasthan Palace Curfew, Power DG & Cost Guide delivered straight to your WhatsApp.",
+    "inputLabel": "WhatsApp Phone Number",
+    "inputPlaceholder": "98765 43210",
+    "buttonText": "Send PDF to WhatsApp",
+    "trustText": "Zero spam. No robocalls. Curated directly by Senior Planner Hemraj."
+  }
+}

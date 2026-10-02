@@ -1,0 +1,144 @@
+{
+  "header": {
+    "brandName": "Weddings Vision",
+    "brandSubtitle": "Private Advisory Booking",
+    "stepLabel": "Step",
+    "backLabel": "Back"
+  },
+  "step1": {
+    "eyebrow": "Step 01 • Consultation Scope & Calendar Slot",
+    "heading": "Select Your Advisory Session",
+    "description": "Choose your consultation focus and pick an available video strategy slot with Senior Planner Hemraj.",
+    "packages": {
+      "venue": {
+        "id": "venue",
+        "tag": "Path A • 60 Minutes",
+        "title": "Rajasthan Venue Advisory",
+        "priceINR": 2999,
+        "priceFormatted": "₹2,999",
+        "gstNote": "incl. 18% GST",
+        "description": "For couples scouting properties across Jaipur, Udaipur, or Jodhpur. Unbiased hidden cost audit and 3–5 palace shortlist.",
+        "creditNote": "100% credited to full planning"
+      },
+      "wedding": {
+        "id": "wedding",
+        "tag": "Path B • 90 Minutes Deep Strategy",
+        "title": "Wedding Planning Blueprint",
+        "priceINR": 4999,
+        "priceFormatted": "₹4,999",
+        "gstNote": "incl. 18% GST",
+        "description": "Full line-item budget modeling (200–800 pax), mandap styling concept direction, and 12-month critical milestone timeline.",
+        "creditNote": "100% credited to full planning"
+      }
+    },
+    "datePickerLabel": "1. Choose Consultation Date (Next 14 Days)",
+    "slotPickerLabel": "2. Select Preferred Time Slot (IST)",
+    "timeSlots": [
+      { "id": "11am", "label": "11:00 AM – 12:00 PM IST", "tag": "Morning" },
+      { "id": "3pm", "label": "03:00 PM – 04:00 PM IST", "tag": "Afternoon" },
+      { "id": "6pm", "label": "06:00 PM – 07:00 PM IST", "tag": "Evening" },
+      { "id": "830pm", "label": "08:30 PM – 09:30 PM IST", "tag": "NRI Friendly (US/UK/UAE)" }
+    ],
+    "buttonNext": "Continue to Client Details"
+  },
+  "step2": {
+    "eyebrow": "Step 02 • Instant Contact Confirmation",
+    "heading": "Who Should We Schedule With?",
+    "description": "We require only your name and WhatsApp number so Senior Planner Hemraj can transmit your calendar conference link and pre-call preparation brief.",
+    "fields": {
+      "nameLabel": "Your Full Name *",
+      "namePlaceholder": "e.g. Radhika Sharma",
+      "phoneLabel": "WhatsApp Phone Number *",
+      "phonePlaceholder": "98765 43210",
+      "phoneHint": "We send your Google Meet link and strategy dossier directly to this number.",
+      "emailLabel": "Email Address",
+      "emailHint": "(Optional for Calendar Invite)",
+      "emailPlaceholder": "radhika@example.com"
+    },
+    "trustBadge": "Autosaved securely. Zero spam pledge. Direct WhatsApp concierge follow-up.",
+    "backLink": "← Change Service / Slot",
+    "buttonNext": "Continue to Event Scope"
+  },
+  "step3": {
+    "eyebrow": "Step 03 • Celebration Scope (Tap to Select)",
+    "heading": "Tell Us About Your Vision",
+    "description": "Quick chips allow our planners to prep venue contracts and budget models before the call.",
+    "chips": {
+      "season": {
+        "label": "Target Celebration Season",
+        "options": ["Oct – Dec 2026", "Jan – Mar 2027", "Apr – Jun 2027", "Winter 2027/28", "Flexible / Undecided"]
+      },
+      "guests": {
+        "label": "Estimated Guest Count",
+        "options": ["50 – 150 Guests", "150 – 300 Guests", "300 – 600 Guests", "600+ Grand Royal"]
+      },
+      "region": {
+        "label": "Target Rajasthan Region",
+        "options": ["Jaipur", "Udaipur", "Jodhpur", "Pushkar & Kumbhalgarh", "Undecided / Exploring"]
+      },
+      "budget": {
+        "label": "Target Budget Bracket (Excl. Venue Stay)",
+        "options": ["₹25L – ₹50 Lakhs", "₹50 Lakhs – ₹1 Crore", "₹1Cr – ₹2.5 Crore", "₹2.5 Crore+"]
+      },
+      "venueStatus": {
+        "label": "Venue Decided?",
+        "options": ["No, Need Venue Scouting", "Yes, Venue Signed"]
+      }
+    },
+    "backLink": "← Back to Details",
+    "buttonNext": "Review Price & Pay"
+  },
+  "step4": {
+    "eyebrow": "Step 04 • Investment & Razorpay Checkout",
+    "heading": "Order Summary",
+    "description": "Review your consultation line items. 100% credited toward your full planning retainer.",
+    "packageConfirmedLabel": "Confirmed Session",
+    "labels": {
+      "baseFee": "Base Strategic Advisory Fee:",
+      "gstLine": "GST (18% Professional Services):",
+      "totalPayable": "Total Amount Payable:"
+    },
+    "guarantee": {
+      "title": "100% Fee Credit Guarantee",
+      "text": "This entire fee is directly deducted from your full wedding planning management fee if engaged within 45 days."
+    },
+    "paymentSecurity": "Razorpay 256-Bit SSL Encrypted • Prioritizes UPI Apps",
+    "paymentMethods": ["GPay", "PhonePe", "Paytm", "All Cards / NetBanking"],
+    "payButtonPrefix": "Pay",
+    "payButtonSuffix": "via UPI / Card",
+    "processingText": "Connecting to Razorpay UPI...",
+    "backLink": "← Edit Event Scope"
+  },
+  "step5": {
+    "eyebrow": "Payment Verified • Booking Confirmed",
+    "headingPrefix": "Namaste,",
+    "refLabel": "Booking Reference:",
+    "scheduledText": "Your consultation is scheduled for",
+    "nextSteps": {
+      "title": "What Happens Next:",
+      "items": [
+        {
+          "title": "Google Meet Video Link:",
+          "text": "An invite has been generated for your session with Senior Planner Hemraj."
+        },
+        {
+          "title": "WhatsApp Confirmation:",
+          "text": "A message receipt has been dispatched to your WhatsApp number."
+        },
+        {
+          "title": "Pre-Call Preparation Checklist:",
+          "checklist": [
+            "Preliminary guest headcount estimate",
+            "Target dates or auspicious muhurat windows",
+            "2–3 palace aesthetics or specific properties of interest"
+          ]
+        }
+      ]
+    },
+    "actions": {
+      "whatsappButton": "Open WhatsApp Chat",
+      "calendarButton": "Download .ICS Calendar",
+      "doneButton": "Done & Return to Site"
+    }
+  }
+}
