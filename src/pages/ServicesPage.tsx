@@ -12,14 +12,14 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking }) => 
     <div className="pt-24 md:pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto space-y-16">
       {/* Header */}
       <div className="space-y-4">
-        <span className="text-[10px] font-mono uppercase tracking-luxury text-heritage-gold font-bold block">
-          Full Scope of Capabilities
+        <span className="text-[10px] font-mono uppercase tracking-luxury text-heritage-emerald font-semibold block">
+          Tailored Wedding Services
         </span>
-        <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-heritage-charcoal font-light leading-tight">
-          Our Wedding Planning Services
+        <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-heritage-charcoal font-normal leading-tight">
+          Everything You Need for Your Dream Wedding
         </h1>
-        <p className="text-heritage-muted text-base sm:text-lg max-w-2xl font-light leading-relaxed">
-          From concept architecture to final guest farewells, we provide end-to-end luxury wedding management across Rajasthan. Every service is governed by strict financial transparency and local Jaipur execution mastery.
+        <p className="text-heritage-charcoal/70 text-base sm:text-lg max-w-2xl font-light leading-relaxed">
+          From your first planning session to the day you celebrate, our team takes care of every detail so you and your families can simply enjoy the moment.
         </p>
       </div>
 
@@ -28,30 +28,30 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking }) => 
         {CORE_SERVICES.map((srv, idx) => (
           <div
             key={idx}
-            className="p-8 bg-white border border-heritage-emerald/15 hover:border-heritage-emerald/40 transition-all shadow-sm space-y-4 flex flex-col justify-between"
+            className="p-8 bg-white border border-heritage-gold/30 hover:border-heritage-emerald transition-all space-y-4 flex flex-col justify-between rounded-2xl"
           >
-            <div className="space-y-2">
+            <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <span className="text-[10px] font-mono uppercase tracking-luxury text-heritage-gold font-bold">
-                  Service 0{idx + 1}
+                  0{idx + 1}
                 </span>
-                <span className="text-xs font-mono text-heritage-muted">{srv.scope}</span>
+                <span className="text-xs font-mono text-heritage-emerald font-medium">{srv.scope}</span>
               </div>
-              <h3 className="font-serif text-2xl text-heritage-emerald">
+              <h3 className="font-serif text-2xl font-semibold text-heritage-emerald">
                 {srv.title}
               </h3>
-              <p className="text-xs sm:text-sm text-heritage-muted leading-relaxed">
+              <p className="text-sm text-heritage-charcoal/75 leading-relaxed font-light">
                 {srv.description}
               </p>
             </div>
 
-            <div className="pt-4 border-t border-heritage-sand-dark flex items-center justify-between">
+            <div className="pt-4 border-t border-heritage-gold/20 flex items-center justify-between">
               <button
                 type="button"
                 onClick={() => onOpenBooking('wedding')}
-                className="text-xs font-mono uppercase tracking-wider text-heritage-emerald hover:text-heritage-emerald-deep font-semibold flex items-center gap-1.5"
+                className="text-xs font-mono uppercase tracking-wider text-heritage-emerald hover:text-heritage-gold transition-colors font-semibold flex items-center gap-1.5"
               >
-                <span>Consult on this service</span>
+                <span>Plan With Us</span>
                 <ArrowUpRight className="w-3.5 h-3.5 text-heritage-gold" />
               </button>
             </div>
@@ -60,28 +60,28 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking }) => 
       </div>
 
       {/* CTA Card */}
-      <div className="p-10 bg-heritage-emerald-deep text-heritage-sand border border-heritage-gold/30 shadow-regal text-center space-y-4">
-        <h2 className="font-serif text-2xl sm:text-3xl font-light">
-          Start with a Strategic Planning Consultation
+      <div className="p-10 md:p-12 bg-heritage-emerald text-heritage-sand border border-heritage-gold/40 rounded-3xl text-center space-y-4">
+        <h2 className="font-serif text-3xl sm:text-4xl font-normal">
+          Let’s Bring Your Wedding Vision to Life
         </h2>
-        <p className="text-xs sm:text-sm text-heritage-sand/80 max-w-lg mx-auto leading-relaxed">
-          Book our 1-on-1 strategy session to receive an itemized Rajasthan wedding budget model, timeline roadmap, and vetted venue shortlist. 100% credited toward your full planning engagement.
+        <p className="text-sm sm:text-base text-heritage-sand/85 max-w-xl mx-auto leading-relaxed font-light">
+          Have questions about venues, decor, or where to begin? Speak directly with our senior wedding planning team and let’s get started.
         </p>
-        <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
           <button
             type="button"
             onClick={() => onOpenBooking('venue')}
-            className="bg-heritage-sand text-heritage-emerald px-7 py-3.5 text-xs uppercase tracking-luxury font-bold hover:bg-white transition-all shadow-md flex items-center gap-2"
+            className="bg-heritage-gold text-heritage-charcoal px-7 py-3.5 text-xs uppercase tracking-wider font-semibold hover:bg-white hover:text-heritage-emerald transition-all flex items-center gap-2 rounded-xl"
           >
-            <span>Venue Advisory (₹2,999)</span>
-            <ArrowUpRight className="w-4 h-4 text-heritage-gold" />
+            <span>Explore Venues With Us</span>
+            <ArrowUpRight className="w-4 h-4 text-heritage-emerald" />
           </button>
           <button
             type="button"
             onClick={() => onOpenBooking('wedding')}
-            className="border border-heritage-gold/40 text-heritage-sand px-7 py-3.5 text-xs uppercase tracking-luxury font-bold hover:bg-heritage-emerald transition-all shadow-md flex items-center gap-2"
+            className="border border-heritage-sand/40 text-heritage-sand px-7 py-3.5 text-xs uppercase tracking-wider font-semibold hover:bg-white hover:text-heritage-emerald transition-all flex items-center gap-2 rounded-xl"
           >
-            <span>Planning Blueprint (₹4,999)</span>
+            <span>Talk to a Wedding Planner</span>
             <ArrowUpRight className="w-4 h-4 text-heritage-gold" />
           </button>
         </div>

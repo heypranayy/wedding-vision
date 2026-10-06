@@ -77,43 +77,43 @@ export const CONSULTATION_PACKAGES: Record<string, ConsultationPackage> = {
 export const CORE_SERVICES = [
   {
     title: 'Full Wedding Planning',
-    description: 'End-to-end stewardship from the initial moodboard to the final bidaai. Complete vendor procurement, contract enforcement, and timeline synchronization.',
-    scope: 'Concept to Execution'
+    description: 'We guide you from your very first ideas to the final farewell. From vendor management and schedule planning to day-of coordination, we take care of every detail so you can enjoy every moment.',
+    scope: 'Complete Guidance'
   },
   {
     title: 'Destination Weddings',
-    description: 'Comprehensive destination logistics across Jaipur, Udaipur, Jodhpur, and Kumbhalgarh. Flight concierge, charter buses, room allocation, and guest welcomes.',
-    scope: 'Rajasthan-Wide Logistics'
+    description: 'Effortless destination celebrations across Jaipur, Udaipur, Jodhpur, and beyond. We handle guest airport pickups, room bookings, travel arrangements, and warm welcomes.',
+    scope: 'Travel & Hospitality'
   },
   {
     title: 'Event Design & Royal Décor',
-    description: 'Architectural mandap design, bespoke floral installations, antique brass accents, and subtle ambient illumination honoring historic Rajasthani aesthetics.',
-    scope: 'Bespoke Production'
+    description: 'Beautiful mandaps, lavish floral arrangements, warm lighting, and traditional Rajasthani elegance brought together to create a breathtaking celebration setting.',
+    scope: 'Décor & Styling'
   },
   {
-    title: 'Guest Hospitality & Protocol',
-    description: 'Traditional Rajasthani dhol, nagada, and garland welcomes paired with digital guest RSVP management, luggage handling, and 24/7 concierge helpdesks.',
-    scope: 'White-Glove Hospitality'
+    title: 'Guest Hospitality & Management',
+    description: 'Welcoming your loved ones with traditional royal hospitality—dhol, flowers, and attentive assistance throughout their stay to make them feel truly cherished.',
+    scope: 'Warm Hospitality'
   },
   {
-    title: 'Catering & Culinary Curation',
-    description: 'Coordination between royal Rajasthani halwais (Dal Baati Churma, Ker Sangri, Ghevar counters) and international gourmet banquet chefs.',
-    scope: 'Menu Engineering'
+    title: 'Catering & Menu Planning',
+    description: 'Curating unforgettable wedding feasts featuring authentic Rajasthani delicacies, live food counters, and multi-cuisine menus loved by all your guests.',
+    scope: 'Food & Dining'
   },
   {
-    title: 'Entertainment & Heritage Artistry',
-    description: 'Curated royal Kalbelia dancers, Sufi ensembles, Manganiyar vocalists, Bollywood live bands, and celebrity DJ setups with legal sound permits.',
-    scope: 'Live Curation'
+    title: 'Entertainment & Music',
+    description: 'Bringing your celebrations to life with folk dancers, soulful live singers, energetic sangeet DJs, and music that keeps the dance floor packed all night.',
+    scope: 'Music & Performances'
   },
   {
-    title: 'Vendor Coordination & Quality Audit',
-    description: 'Strict quality control over photographers, cinematographers, sound technicians, and florists with zero undisclosed agency kickbacks.',
-    scope: 'Transparent Audits'
+    title: 'Vendor Selection & Coordination',
+    description: 'Connecting you with the best photographers, makeup artists, and decorators, with completely honest advice and transparent pricing.',
+    scope: 'Trusted Vendors'
   },
   {
-    title: 'Budget Allocation & Cost Control',
-    description: 'Line-by-line financial tracking to eliminate budget creep, sudden generator overages, or duplicate vendor charges.',
-    scope: 'Financial Discipline'
+    title: 'Budget Planning',
+    description: 'Clear, straightforward guidance to help you make the best choices for your budget with no unexpected costs or surprises.',
+    scope: 'Clear Pricing'
   }
 ];
 

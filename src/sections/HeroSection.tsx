@@ -57,8 +57,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
           {/* Eyebrow badge */}
           <div className="inline-flex items-center gap-2 border border-heritage-gold/40 bg-heritage-sand-dark/90 px-3 py-1 rounded-md shadow-sm">
             <span className="w-1.5 h-1.5 bg-heritage-emerald rounded-full animate-pulse" />
-            <span className="text-[10px] sm:text-[11px] font-mono uppercase tracking-luxury text-heritage-emerald font-semibold">
-              Jaipur • Udaipur • Jodhpur
+            <span className="text-[10px] sm:text-[11px] font-mono tracking-luxury text-heritage-emerald font-semibold">
+              YOUR HERITAGE WEDDING PARTNER
             </span>
           </div>
 
@@ -69,7 +69,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
               <span className="font-bold text-heritage-emerald">in Rajasthan.</span>
             </h1>
             <p className="text-heritage-muted text-base sm:text-lg leading-relaxed font-light max-w-xl">
-              Objective palace venue scouting, unbiased rate audits, and end-to-end luxury wedding planning.
+              We help you find the best palace venues, negotiate clear prices, and manage every detail of your luxury wedding.
             </p>
           </div>
 
@@ -80,7 +80,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
               className="bg-white border border-heritage-gold/40 shadow-regal rounded-xl p-4 sm:p-5 transition-shadow hover:shadow-regal-lg"
             >
               <div className="text-[11px] font-mono uppercase tracking-wider text-heritage-gold-dark font-semibold mb-3 flex items-center gap-1.5">
-                <span>Check Palace Availability & Consultation</span>
+                <span>FIND VENUES & GET IN TOUCH</span>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-4">

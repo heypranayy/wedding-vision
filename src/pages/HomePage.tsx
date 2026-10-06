@@ -11,6 +11,7 @@ import {
   FaqSection,
   FinalCtaSection,
 } from '../sections';
+import { Skiper72 } from '../components/ui/skiper72';
 
 interface HomePageProps {
   onOpenBooking: (serviceType?: ServiceType, prefill?: BookingPrefill) => void;
@@ -18,12 +19,13 @@ interface HomePageProps {
 
 export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking }) => {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-x-clip">
       <HeroSection onOpenBooking={(type, prefill) => onOpenBooking(type, prefill)} />
+      <Skiper72 />
+      <ServicesSection onOpenBooking={(type) => onOpenBooking(type)} />
       <TwoPathsSection onOpenBooking={(type) => onOpenBooking(type)} />
       <HowItWorksSection onOpenBooking={(type) => onOpenBooking(type)} />
       <ProofStripSection />
-      <ServicesSection onOpenBooking={(type) => onOpenBooking(type)} />
       <VenueShowcaseSection onOpenBooking={(type, prefill) => onOpenBooking(type, prefill)} />
       <RealWeddingsSection onOpenBooking={(type, prefill) => onOpenBooking(type, prefill)} />
       <FaqSection />
