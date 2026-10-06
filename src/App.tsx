@@ -6,6 +6,7 @@ import { MobileActionBar } from './components/MobileActionBar';
 import { BookingModal } from './components/BookingModal';
 import { ExitIntentModal } from './components/ExitIntentModal';
 import { SmoothScroll } from './components/SmoothScroll';
+import { ArchLoader } from './components/ArchLoader';
 import type { ServiceType, BookingPrefill } from './types';
 
 // Route-level code splitting with React.lazy
@@ -70,6 +71,9 @@ export const App: React.FC = () => {
   return (
     <SmoothScroll>
       <ScrollToTop />
+      {/* Arch Portal Intro Loader */}
+      <ArchLoader />
+
       <div className="min-h-screen flex flex-col bg-heritage-sand text-heritage-charcoal relative">
         {/* Navigation Header */}
         <Header onOpenBooking={handleOpenBooking} />

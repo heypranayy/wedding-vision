@@ -129,17 +129,23 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
         </div>
       </div>
 
-      {/* Sticky Smart Header Container (Hides on scroll down, reappears on scroll up) */}
+      {/* Smart Header Container: Absolute overlay over the Hero, transitions to Sticky on scroll */}
       <div
-        className={`sticky top-0 left-0 right-0 z-40 transition-transform duration-300 ease-in-out ${isVisible ? 'translate-y-0' : '-translate-y-full pointer-events-none'
-          }`}
+        className={`${
+          isScrolled
+            ? `sticky top-0 z-40 transition-transform duration-300 ease-in-out ${
+                isVisible ? 'translate-y-0' : '-translate-y-full pointer-events-none'
+              }`
+            : 'absolute top-[33px] left-0 right-0 z-30 transition-transform duration-300 ease-in-out'
+        }`}
       >
         {/* Main Luxury Header */}
         <header
-          className={`w-full transition-all duration-300 ${isScrolled
-            ? 'bg-heritage-sand/98 backdrop-blur-md shadow-regal py-2.5'
-            : 'bg-heritage-sand py-4'
-            }`}
+          className={`w-full transition-all duration-300 ${
+            isScrolled
+              ? 'bg-heritage-sand/98 backdrop-blur-md shadow-regal py-2.5 border-b border-heritage-gold/25'
+              : 'bg-transparent py-3 sm:py-4'
+          }`}
         >
           <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between gap-4 lg:gap-8">
