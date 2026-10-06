@@ -1,5 +1,5 @@
-import React, { useRef, useEffect } from 'react';
-import { Star, Quote, Award, ExternalLink, Sparkles } from 'lucide-react';
+import React from 'react';
+import { Star, Award, ExternalLink, Sparkles } from 'lucide-react';
 import { homepageData } from '../content';
 
 // Import Swiper and Swiper modules

@@ -8,7 +8,6 @@ import {
   MapPin,
   ArrowUpRight,
   ShieldCheck,
-  Sparkles,
   Heart
 } from 'lucide-react';
 import { homepageData, navigationData } from '../content';
@@ -20,15 +19,6 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
   const { footer } = homepageData;
-
-  const quickLinks = [
-    { label: 'Venue Advisory (₹2,999)', action: () => onOpenBooking('venue'), isBooking: true },
-    { label: 'Planning Blueprint (₹4,999)', action: () => onOpenBooking('wedding'), isBooking: true },
-    { label: 'Palace Venues Showcase', href: '/#venue-showcase' },
-    { label: 'Real Heritage Weddings', href: '/#real-weddings' },
-    { label: 'Heritage & Our Team', href: '/about' },
-    { label: 'Contact Us', href: '/contact' },
-  ];
 
   const palaceDestinations = [
     { name: 'Jaipur Heritage Palaces', href: '/#venue-showcase' },

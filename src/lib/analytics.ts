@@ -117,6 +117,13 @@ export const analytics = {
     });
   },
 
+  formSubmit: (formName: string, data?: Record<string, any>) => {
+    trackEvent('form_submit', {
+      form_name: formName,
+      ...data,
+    });
+  },
+
   leadCaptured: (lead: Record<string, any>) => {
     trackEvent('lead_captured', {
       lead_id: lead.id,

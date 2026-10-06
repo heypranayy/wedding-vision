@@ -7,7 +7,6 @@ import {
   ProofStripSection,
   ServicesSection,
   VenueShowcaseSection,
-  RealWeddingsSection,
   FaqSection,
   FinalCtaSection,
 } from '../sections';

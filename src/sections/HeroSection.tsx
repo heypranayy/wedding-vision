@@ -25,9 +25,8 @@ const PALACE_CARDS = venuesData.slice(0, 6).map((venue) => ({
 }));
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
-  // Video background opacity control state (default 0.25 for subtle luxury ambiance)
-  const [videoOpacity, setVideoOpacity] = useState(0.25);
-  const [showOpacityControl, setShowOpacityControl] = useState(false);
+  // Video background opacity (default 0.25 for subtle luxury ambiance)
+  const videoOpacity = 0.25;
 
   // Date selection state
   const [selectedDate, setSelectedDate] = useState('');

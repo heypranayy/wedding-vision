@@ -5,8 +5,7 @@ import {
   ShieldCheck,
   Users,
   MapPin,
-  Sparkles,
-  Compass
+  Sparkles
 } from 'lucide-react';
 import { homepageData, venuesData } from '../content';
 import type { ServiceType, BookingPrefill, Venue } from '../types';
