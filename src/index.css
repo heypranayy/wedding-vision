@@ -81,3 +81,8 @@ html.lenis, html.lenis body {
   animation-play-state: paused;
 }
 
+/* Swiper Continuous Linear Ticker */
+.swiper-continuous .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+

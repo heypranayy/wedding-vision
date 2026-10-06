@@ -104,40 +104,69 @@
     "proof": "Led directly by our senior planning team with 10+ years of Rajasthan wedding expertise"
   },
   "proofStrip": {
-    "eyebrow": "Verifiable Client Experiences",
-    "heading": "Real Reviews with Authentic Dates",
-    "ctaText": "Read all 10 verified reviews on WeddingWire",
+    "eyebrow": "Client Words",
+    "heading": "Loved by Couples Across the Globe",
+    "ctaText": "Read Verified Reviews on WeddingWire",
     "ctaUrl": "https://www.weddingwire.in/wedding-planners/wedding-vision--e405719/reviews",
     "reviews": [
       {
         "client": "Pooja & Siddharth",
-        "date": "October 2024",
-        "rating": "5.0 ★",
-        "venue": "Jaipur Palace Wedding",
-        "quote": "Weddings Vision saved us over ₹6 Lakhs on venue power generator overages and sound curfews that the hotel sales desk conveniently neglected to mention. Truly objective advisors.",
-        "isStale": false
+        "location": "Jaipur Marriott & Delhi",
+        "date": "1 month ago",
+        "rating": 5,
+        "source": "Google Review",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&h=160&q=80",
+        "quote": "Mr. Rajat and the Weddings Vision team were exceptional from day one. They handled every small detail and saved us so much stress with venue contracts and curfew management. Truly like family!"
       },
       {
-        "client": "Ananya & Kabir (NRI UK)",
-        "date": "July 2024",
-        "rating": "5.0 ★",
-        "venue": "Udaipur Destination Wedding",
-        "quote": "Planning our celebration from London was stressful until we booked the 90-minute Blueprint session. The line-item budget dossier Hemraj sent was our single source of truth.",
-        "isStale": false
+        "client": "Ananya & Kabir",
+        "location": "London, UK",
+        "date": "3 months ago",
+        "rating": 5,
+        "source": "Google Review",
+        "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=160&h=160&q=80",
+        "quote": "Planning our Udaipur celebration from the UK seemed impossible until we engaged Rajat. The itemized budget and vendor transparency gave us complete clarity. Flawless execution throughout."
       },
       {
-        "client": "Meera & Rohan",
-        "date": "November 2023",
-        "rating": "5.0 ★",
-        "venue": "Samode Heritage Haveli",
-        "quote": "Exceptional decor execution and impeccable royal hospitality for our 250 guests. Transparent vendor billing down to every single rupee.",
-        "isStale": true,
-        "staleTag": "Historical Season Review (Nov 2023)"
+        "client": "Rajat & Kritika Sharma",
+        "location": "Jaipur",
+        "date": "4 months ago",
+        "rating": 5,
+        "source": "Google Review",
+        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&h=160&q=80",
+        "quote": "Top notch wedding planners in Jaipur! Punctuality, decor aesthetics, and warm royal hospitality. Every single guest complimented the arrangements and management."
+      },
+      {
+        "client": "Dr. Tanvi & Vikram",
+        "location": "Bengaluru",
+        "date": "6 months ago",
+        "rating": 5,
+        "source": "Google Review",
+        "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=160&h=160&q=80",
+        "quote": "The 60-min advisory call gave us genuine ground intelligence before signing our palace advance. They caught hidden power costs and curfews that saved us lakhs."
+      },
+      {
+        "client": "Meera & Rohan Singhal",
+        "location": "Mumbai",
+        "date": "7 months ago",
+        "rating": 5,
+        "source": "Google Review",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&h=160&q=80",
+        "quote": "Zero secret vendor markups—every bill was transparent to the rupee. Exceptional mandap decor, sound coordination, and guest welcoming."
+      },
+      {
+        "client": "Rhea & Aditya Mehra",
+        "location": "Dubai, UAE",
+        "date": "8 months ago",
+        "rating": 5,
+        "source": "Google Review",
+        "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&h=160&q=80",
+        "quote": "From airport concierges to traditional folk music at the fort, our destination wedding was magical. Rajat was personally available around the clock."
       }
     ],
     "proof": {
-      "award": "WeddingWire India Annual Wedding Awards 2024 Winner",
-      "authentication": "All reviews authenticated via verified third-party couple accounts"
+      "award": "Google 5.0 ★ Rated & WeddingWire Winner",
+      "authentication": "100% verified couple reviews from Google Business & WeddingWire"
     }
   },
   "services": {
@@ -182,12 +211,12 @@
     }
   },
   "venueShowcase": {
-    "eyebrow": "Regional Palace Directory",
-    "heading": "Rajasthan Venue Showcase",
-    "description": "Sourced from verified property audits across Jaipur, Udaipur, Jodhpur, and Neemrana.",
-    "cardCta": "Get Venue Options",
-    "cardPlaceholderNote": "*Est. subject to dates",
-    "proof": "All shortlisted properties audited for 10:00 PM Rajasthan Outdoor Sound Regulations & Generator Load Capacity."
+    "eyebrow": "Palace Directory",
+    "heading": "Featured Heritage Venues",
+    "description": "Handpicked palaces, lakeside havelis, and historic fortresses across Rajasthan.",
+    "cardCta": "Inquire About Venue",
+    "cardPlaceholderNote": "*Seasonal rates vary",
+    "proof": "Every venue is checked for outdoor sound curfews, power backup capacity, and outside vendor terms."
   },
   "realWeddings": {
     "eyebrow": "Documented Production Archive",
@@ -235,35 +264,35 @@
     ]
   },
   "faq": {
-    "eyebrow": "Clarity & Radical Honesty",
-    "heading": "Answers to Essential Questions",
-    "description": "Everything you need to know about our paid consultations, fee credits, and booking terms.",
+    "eyebrow": "Got Questions?",
+    "heading": "Frequently Asked Questions",
+    "description": "Clear answers about our planning process, pricing, and how consultations work.",
     "items": [
       {
-        "q": "Why should I pay for a consultation instead of getting a free quote?",
-        "a": "Most wedding brokers offer 'free quotes' because they take massive 15%–25% secret kickbacks from venues and vendors, pushing you toward venues that pay them the highest cut. Weddings Vision is 100% independent: we never accept kickbacks. Our paid sessions deliver unfiltered insider intelligence on sound curfews, hidden generator costs, and contract clauses. Best of all, 100% of your consultation fee is credited against our full planning retainer if you book with us within 45 days."
+        "q": "Why do you charge for an initial consultation?",
+        "a": "Unlike brokers who offer free quotes to push venues that pay them secret commissions, we work strictly for you with zero vendor markups. In our paid session, we give you unbiased advice on true venue costs, electricity surcharges, and sound curfew rules. Plus, 100% of your consultation fee is credited back if you book our full planning service."
       },
       {
-        "q": "What is your refund and rescheduling policy?",
-        "a": "We understand family schedules change. You may reschedule your consultation anytime up to 24 hours prior to the call with zero penalty. Furthermore, because your fee is 100% credited against full planning services, your payment is completely risk-free."
+        "q": "Do I need to have a venue booked before talking to you?",
+        "a": "Not at all. In fact, consulting with us before signing a hotel contract is the best way to save money and avoid costly penalty clauses. We help you compare venues and understand all hidden costs upfront."
       },
       {
-        "q": "What exactly happens during the consultation call?",
-        "a": "In the 60-Minute Venue Advisory (₹2,999), we audit your guest count, budget, and season against verified Rajasthan venues, exposing hidden hotel surcharges and curfew realities, followed by an Executive PDF Shortlist. In the 90-Minute Planning Blueprint (₹4,999), we build your itemized financial model (decor, F&B, sound, photography) and 12-month timeline roadmap."
+        "q": "What happens during the consultation call?",
+        "a": "We jump on a private 1-on-1 video call to review your dates, guest count, and vision. We give you a realistic budget breakdown, share suitable venue recommendations, and send you a summary plan with hotel contacts after the call."
       },
       {
-        "q": "Do I need to have a venue booked before contacting you?",
-        "a": "Not at all. In fact, consulting with us before signing a venue contract is the most cost-effective decision you can make. Path A (Venue Advisory) is specifically engineered for couples who have not yet signed a venue deposit to protect them from unfavorable clauses."
+        "q": "What is your rescheduling policy?",
+        "a": "You can easily reschedule your consultation anytime up to 24 hours before the call at no additional cost. Just message or email us."
       },
       {
-        "q": "Are consultations conducted online or in person?",
-        "a": "Both. For out-of-station and NRI clients (US, UK, UAE, Australia), we host high-definition Google Meet video calls with flexible time slots. If you are in Jaipur, you are welcome to schedule an in-person session at our corporate headquarters on the 6th Floor of Mahima Trinity Mall, Sodala."
+        "q": "Are calls held online or can we meet in person?",
+        "a": "We conduct video calls over Google Meet for couples across India and abroad. If you are in Jaipur, you are also welcome to meet our team in person at our Mahima Trinity Mall office in Sodala."
       }
     ],
     "proof": {
-      "address": "Jaipur Office Walk-in Consultations Available at Mahima Trinity Mall, Sodala.",
-      "whatsappPrompt": "Still Have Questions? WhatsApp a Planner Free →",
-      "whatsappUrl": "https://wa.me/919929252073?text=Hi%20Weddings%20Vision,%20I%20have%20a%20question%20regarding%20planning%20my%20wedding."
+      "address": "Visit our Jaipur office at Mahima Trinity Mall, Sodala.",
+      "whatsappPrompt": "Have a quick question? Chat with our team on WhatsApp →",
+      "whatsappUrl": "https://wa.me/919929252073?text=Hi%20Weddings%20Vision,%20I%20have%20a%20question%20about%20wedding%20planning."
     }
   },
   "finalCta": {

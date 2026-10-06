@@ -27,7 +27,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking }) => {
       <HowItWorksSection onOpenBooking={(type) => onOpenBooking(type)} />
       <ProofStripSection />
       <VenueShowcaseSection onOpenBooking={(type, prefill) => onOpenBooking(type, prefill)} />
-      <RealWeddingsSection onOpenBooking={(type, prefill) => onOpenBooking(type, prefill)} />
+      {/* <RealWeddingsSection onOpenBooking={(type, prefill) => onOpenBooking(type, prefill)} /> */}
       <FaqSection />
       <FinalCtaSection onOpenBooking={(type) => onOpenBooking(type)} />
     </div>

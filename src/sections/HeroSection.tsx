@@ -73,7 +73,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
         <div className="absolute inset-0 bg-gradient-to-b from-[#FBF9F4]/40 via-[#FBF9F4]/20 to-[#FBF9F4]/90" />
       </div>
 
-      {/* Floating Video Opacity Controller */}
+      {/* Floating Video Opacity Controller
       <div className="absolute top-24 sm:top-20 right-4 sm:right-8 z-30 flex items-center gap-2">
         {showOpacityControl && (
           <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-heritage-gold/40 shadow-sm text-xs font-mono">
@@ -102,7 +102,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
           <span className="w-2 h-2 rounded-full bg-heritage-emerald animate-pulse" />
           <span>BG Video</span>
         </button>
-      </div>
+      </div> */}
 
       {/* Main Hero Content Container (Padded to give breathing room under the overlaid header) */}
       <div className="relative px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 md:pt-24 pb-10 md:pb-16 max-w-7xl mx-auto z-10">
