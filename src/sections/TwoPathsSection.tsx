@@ -6,9 +6,7 @@ import {
   Check,
   ShieldCheck,
   ArrowUpRight,
-  Clock,
-  Sparkles,
-  ChevronRight
+  Clock
 } from 'lucide-react';
 import { homepageData } from '../content';
 import type { ServiceType } from '../types';

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ArrowUpRight, Sparkles, Calendar, Video, FileCheck, CheckCircle2 } from 'lucide-react';
+import { ArrowUpRight, Sparkles, Calendar, Video, FileCheck } from 'lucide-react';
 import { homepageData } from '../content';
 import type { ServiceType } from '../types';
 import { analytics } from '../lib/analytics';
