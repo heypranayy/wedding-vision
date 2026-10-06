@@ -18,8 +18,8 @@ interface HomePageProps {
 
 export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking }) => {
   return (
-    <div className="pt-20 md:pt-24 overflow-hidden">
-      <HeroSection onOpenBooking={(type) => onOpenBooking(type)} />
+    <div className="overflow-hidden">
+      <HeroSection onOpenBooking={(type, prefill) => onOpenBooking(type, prefill)} />
       <TwoPathsSection onOpenBooking={(type) => onOpenBooking(type)} />
       <HowItWorksSection onOpenBooking={(type) => onOpenBooking(type)} />
       <ProofStripSection />

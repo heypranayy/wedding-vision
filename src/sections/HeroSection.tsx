@@ -1,145 +1,185 @@
-import React from 'react';
-import { ArrowUpRight, MessageCircle, ShieldCheck, Award } from 'lucide-react';
-import { homepageData } from '../content';
-import type { ServiceType } from '../types';
+import React, { useState } from 'react';
+import {
+  Calendar as CalendarIcon,
+  MapPin,
+  Users,
+  ArrowUpRight,
+} from 'lucide-react';
+import { venuesData } from '../content';
+import type { ServiceType, BookingPrefill } from '../types';
 import { analytics } from '../lib/analytics';
-import { useFeatureFlag } from '../hooks/useFeatureFlag';
+import { Skiper48 } from '../components/ui/skiper48';
 
 interface HeroSectionProps {
-  onOpenBooking: (serviceType?: ServiceType) => void;
+  onOpenBooking: (serviceType?: ServiceType, prefill?: BookingPrefill) => void;
 }
 
+// Convert palace venue data to Skiper48 card images
+const PALACE_CARDS = venuesData.slice(0, 6).map((venue) => ({
+  src: venue.image,
+  alt: `${venue.name} luxury wedding venue in ${venue.city}`,
+  name: venue.name,
+  city: `${venue.city} • ${venue.region}`,
+  capacity: venue.capacityDisplay,
+  price: venue.startingFromDisplay,
+}));
+
 export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
-  const { hero } = homepageData;
-  const ctaVariant = useFeatureFlag('heroCtaVariant');
+  // Date selection state
+  const [selectedDate, setSelectedDate] = useState('');
+  const [selectedCity, setSelectedCity] = useState('Jaipur');
+  const [selectedGuests, setSelectedGuests] = useState('200-500');
 
-  const handleBooking = () => {
-    analytics.ctaClick(hero.ctaPrimary, 'hero_primary', 'venue');
-    analytics.bookingModalOpen('venue', 'hero_primary');
-    onOpenBooking('venue');
-  };
+  // Set minimum date to tomorrow (YYYY-MM-DD)
+  const tomorrowStr = React.useMemo(() => {
+    const d = new Date();
+    d.setDate(d.getDate() + 1);
+    return d.toISOString().split('T')[0];
+  }, []);
 
-  const handleWhatsApp = () => {
-    analytics.whatsappClick('hero_secondary', hero.whatsappIntent);
+  const handleConsultationSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    analytics.ctaClick('Find My Venue', 'hero_planner_date_picker', 'venue');
+    analytics.bookingModalOpen('venue', 'hero_planner_date_picker');
+
+    onOpenBooking('venue', {
+      city: selectedCity,
+      guestCount: selectedGuests,
+      serviceType: 'venue',
+    });
   };
 
   return (
-    <section className="relative px-4 sm:px-6 lg:px-8 py-10 md:py-16 max-w-7xl mx-auto overflow-hidden">
-      {/* Decorative Subtle Architectural Motif */}
-      <div className="absolute top-0 right-1/4 w-72 h-72 jaali-watermark rounded-full opacity-40 pointer-events-none -z-10" />
-
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
-        {/* Narrative Column (7 cols) */}
+    <section className="relative px-4 sm:px-6 lg:px-8 pt-4 pb-10 md:pt-6 md:pb-16 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        {/* Left Column: Clean Editorial Headline + Interactive Booking Bar (7 Cols) */}
         <div className="lg:col-span-7 space-y-6">
-          <div className="inline-flex items-center gap-2 border border-heritage-gold/50 bg-heritage-sand-dark/80 px-3 py-1 shadow-sm">
+          {/* Eyebrow badge */}
+          <div className="inline-flex items-center gap-2 border border-heritage-gold/40 bg-heritage-sand-dark/90 px-3 py-1 rounded-md shadow-sm">
             <span className="w-1.5 h-1.5 bg-heritage-emerald rounded-full animate-pulse" />
             <span className="text-[10px] sm:text-[11px] font-mono uppercase tracking-luxury text-heritage-emerald font-semibold">
-              {hero.eyebrow}
+              Jaipur • Udaipur • Jodhpur
             </span>
           </div>
 
-          {/* Oversized Type in Editorial Asymmetry */}
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-heritage-charcoal font-light leading-[1.08] tracking-tight">
-            {hero.promisePrefix}{' '}
-            <span className="italic font-normal text-heritage-emerald">
-              {hero.promiseEmphasis}
-            </span>
-          </h1>
+          {/* Simple, powerful headline */}
+          <div className="space-y-3">
+            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-heritage-charcoal font-light leading-[1.1] tracking-tight">
+              Plan your royal wedding{' '}
+              <span className="font-bold text-heritage-emerald">in Rajasthan.</span>
+            </h1>
+            <p className="text-heritage-muted text-base sm:text-lg leading-relaxed font-light max-w-xl">
+              Objective palace venue scouting, unbiased rate audits, and end-to-end luxury wedding planning.
+            </p>
+          </div>
 
-          <p className="text-heritage-muted text-base sm:text-lg leading-[1.75] font-light max-w-2xl">
-            {hero.subhead}
-          </p>
+          {/* Loverly-Style Date & Destination Picker Bar */}
+          <div className="pt-2">
+            <form
+              onSubmit={handleConsultationSubmit}
+              className="bg-white border border-heritage-gold/40 shadow-regal rounded-xl p-4 sm:p-5 transition-shadow hover:shadow-regal-lg"
+            >
+              <div className="text-[11px] font-mono uppercase tracking-wider text-heritage-gold-dark font-semibold mb-3 flex items-center gap-1.5">
+                <span>Check Palace Availability & Consultation</span>
+              </div>
 
-          {/* Direct Dual CTAs with Micro-Cluster Proof */}
-          <div className="pt-2 space-y-3">
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-4">
+                {/* 1. Date Picker */}
+                <div className="flex flex-col space-y-1">
+                  <label
+                    htmlFor="wedding-date"
+                    className="text-[10px] font-mono uppercase tracking-wider text-heritage-charcoal flex items-center gap-1.5"
+                  >
+                    <CalendarIcon className="w-3.5 h-3.5 text-heritage-emerald" />
+                    <span>Wedding Date</span>
+                  </label>
+                  <input
+                    id="wedding-date"
+                    type="date"
+                    min={tomorrowStr}
+                    value={selectedDate}
+                    onChange={(e) => setSelectedDate(e.target.value)}
+                    className="w-full bg-heritage-sand/60 border border-heritage-gold/30 px-3 py-2 text-xs font-sans text-heritage-charcoal rounded-lg focus:outline-none focus:border-heritage-emerald cursor-pointer"
+                  />
+                </div>
+
+                {/* 2. Destination City Dropdown */}
+                <div className="flex flex-col space-y-1">
+                  <label
+                    htmlFor="wedding-city"
+                    className="text-[10px] font-mono uppercase tracking-wider text-heritage-charcoal flex items-center gap-1.5"
+                  >
+                    <MapPin className="w-3.5 h-3.5 text-heritage-emerald" />
+                    <span>Destination</span>
+                  </label>
+                  <select
+                    id="wedding-city"
+                    value={selectedCity}
+                    onChange={(e) => setSelectedCity(e.target.value)}
+                    className="w-full bg-heritage-sand/60 border border-heritage-gold/30 px-3 py-2 text-xs font-sans text-heritage-charcoal rounded-lg focus:outline-none focus:border-heritage-emerald cursor-pointer"
+                  >
+                    <option value="Jaipur">Jaipur (Pink City)</option>
+                    <option value="Udaipur">Udaipur (Lake Palaces)</option>
+                    <option value="Jodhpur">Jodhpur (Blue City)</option>
+                    <option value="Jaisalmer">Jaisalmer (Golden Forts)</option>
+                    <option value="Pushkar / Neemrana">Pushkar & Neemrana</option>
+                  </select>
+                </div>
+
+                {/* 3. Estimated Guest Count */}
+                <div className="flex flex-col space-y-1">
+                  <label
+                    htmlFor="wedding-guests"
+                    className="text-[10px] font-mono uppercase tracking-wider text-heritage-charcoal flex items-center gap-1.5"
+                  >
+                    <Users className="w-3.5 h-3.5 text-heritage-emerald" />
+                    <span>Guest Count</span>
+                  </label>
+                  <select
+                    id="wedding-guests"
+                    value={selectedGuests}
+                    onChange={(e) => setSelectedGuests(e.target.value)}
+                    className="w-full bg-heritage-sand/60 border border-heritage-gold/30 px-3 py-2 text-xs font-sans text-heritage-charcoal rounded-lg focus:outline-none focus:border-heritage-emerald cursor-pointer"
+                  >
+                    <option value="Under 150">Under 150 Guests</option>
+                    <option value="200-500">200 – 500 Guests</option>
+                    <option value="500-800">500 – 800 Guests</option>
+                    <option value="800+">800+ Royal Scale</option>
+                  </select>
+                </div>
+              </div>
+
+              {/* Submit CTA */}
               <button
-                type="button"
-                onClick={handleBooking}
-                className="inline-flex items-center justify-center gap-2.5 bg-heritage-emerald text-heritage-sand px-7 py-4 text-xs uppercase tracking-luxury font-semibold hover:bg-heritage-emerald-deep transition-all duration-300 border border-heritage-emerald shadow-lg group focus-visible:ring-2 focus-visible:ring-heritage-emerald"
+                type="submit"
+                className="w-full bg-heritage-emerald hover:bg-heritage-emerald-deep text-heritage-sand py-3 px-6 text-xs uppercase tracking-luxury font-semibold rounded-lg transition-all duration-200 flex items-center justify-center gap-2 group shadow-sm"
               >
-                <span>
-                  {ctaVariant === 'claim_slot' ? 'Claim Your Advisory Slot' : hero.ctaPrimary}
-                </span>
+                <span>Find Venues & Book Consultation</span>
                 <ArrowUpRight className="w-4 h-4 text-heritage-gold transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </button>
+            </form>
+          </div>
 
-              <a
-                href={hero.whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={handleWhatsApp}
-                className="inline-flex items-center justify-center gap-2.5 bg-white border border-emerald-800/30 text-emerald-900 px-6 py-4 text-xs uppercase tracking-luxury font-semibold hover:bg-emerald-50 transition-all duration-300 shadow-sm focus-visible:ring-2 focus-visible:ring-emerald-700"
-              >
-                <MessageCircle className="w-4 h-4 text-emerald-600" />
-                <span>{hero.ctaSecondary}</span>
-              </a>
-            </div>
-
-            {/* Verified Trust Proof Directly Under CTAs */}
-            <div className="flex flex-wrap items-center gap-y-2 gap-x-5 text-[11px] font-mono text-heritage-charcoal/90 pt-1.5 border-t border-heritage-sand-dark">
-              <a
-                href={hero.proof.weddingWireUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-heritage-emerald hover:underline font-semibold"
-              >
-                <Award className="w-3.5 h-3.5 text-heritage-gold" />
-                <span>{hero.proof.rating}</span>
-              </a>
-
-              <span className="flex items-center gap-1.5 text-heritage-charcoal">
-                <span className="w-1.5 h-1.5 bg-heritage-gold rounded-full" />
-                <span>{hero.proof.award}</span>
-              </span>
-
-              <span className="flex items-center gap-1.5 text-emerald-800 font-medium">
-                <ShieldCheck className="w-3.5 h-3.5 text-emerald-700" />
-                <span>{hero.proof.guarantee}</span>
-              </span>
-            </div>
+          {/* Minimal Trust Indicator */}
+          <div className="flex items-center gap-5 text-xs font-mono text-heritage-muted pt-1">
+            <span className="flex items-center gap-1.5">
+              <span className="text-heritage-gold font-bold">5.0 ★</span>
+              <span>Rating by 100+ Clients.</span>
+            </span>
+            <span className="text-heritage-gold/50">•</span>
+            <span>WeddingWire Winner 2024</span>
           </div>
         </div>
 
-        {/* Hero Visual Column (5 cols) - LCP Element: No animation on image */}
-        <div className="lg:col-span-5 relative">
-          <div className="relative mx-auto max-w-md lg:max-w-none">
-            <div className="p-3 bg-white border border-heritage-gold/30 shadow-regal">
-              <div className="overflow-hidden bg-heritage-sand-dark aspect-[4/5] relative">
-                <img
-                  src={hero.media.image}
-                  alt={hero.media.alt}
-                  fetchPriority="high"
-                  decoding="async"
-                  className="w-full h-full object-cover object-center filter saturate-[0.95] contrast-[1.05] lcp-hero-img"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-heritage-charcoal-deep/70 via-transparent to-transparent pointer-events-none" />
-
-                {/* Floating Architectural Badge */}
-                <div className="absolute bottom-4 left-4 right-4 p-3 bg-heritage-sand/95 backdrop-blur-sm border border-heritage-gold/40 flex items-center justify-between">
-                  <div>
-                    <span className="text-[9px] font-mono uppercase tracking-luxury text-heritage-gold block">
-                      {hero.media.badgeTitle}
-                    </span>
-                    <span className="font-serif text-sm font-semibold text-heritage-emerald">
-                      {hero.media.badgeSubtitle}
-                    </span>
-                  </div>
-                  <div className="text-right">
-                    <span className="text-xs font-mono font-bold text-heritage-charcoal block">
-                      {hero.media.badgeRating}
-                    </span>
-                    <span className="text-[9px] text-heritage-muted font-mono">
-                      {hero.media.badgeSource}
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="hidden sm:block absolute -top-3 -right-3 bg-heritage-emerald-deep text-heritage-sand px-3 py-1.5 text-[10px] font-mono uppercase tracking-widest border border-heritage-gold/40 shadow">
-              {hero.media.locationTag}
-            </div>
+        {/* Right Column: Skiper48 Card Swipe Carousel (5 Cols) */}
+        <div className="lg:col-span-5 flex items-center justify-center relative select-none">
+          <div className="w-full flex items-center justify-center">
+            <Skiper48
+              images={PALACE_CARDS}
+              autoplay={true}
+              loop={true}
+              showNavigation={false}
+            />
           </div>
         </div>
       </div>
