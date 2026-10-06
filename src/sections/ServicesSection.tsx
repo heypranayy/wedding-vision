@@ -22,7 +22,7 @@ const servicesData: ServiceItem[] = [
     id: 'full-wedding-planning',
     title: 'Full Wedding Planning',
     scope: 'Complete Guidance',
-    image: '/assets/service-wedding-planning.jpg',
+    image: '/assets/service-wedding-planning.webp',
     summary:
       'We guide you from your very first ideas to the final farewell. From vendor management and schedule planning to day-of coordination, we take care of every detail.',
     highlights: [
@@ -36,7 +36,7 @@ const servicesData: ServiceItem[] = [
     id: 'destination-weddings',
     title: 'Destination Weddings',
     scope: 'Travel & Hospitality',
-    image: '/assets/service-destination-weddings.jpg',
+    image: '/assets/service-destination-weddings.webp',
     summary:
       'Effortless destination celebrations across Jaipur, Udaipur, Jodhpur, and beyond. We handle guest airport pickups, room bookings, and warm welcomes.',
     highlights: [
@@ -50,7 +50,7 @@ const servicesData: ServiceItem[] = [
     id: 'event-design-decor',
     title: 'Event Design & Décor',
     scope: 'Décor & Styling',
-    image: '/assets/service-event-decor.jpg',
+    image: '/assets/service-event-decor.webp',
     summary:
       'Beautiful mandaps, lavish floral arrangements, warm lighting, and traditional Rajasthani elegance brought together to create a breathtaking celebration setting.',
     highlights: [
@@ -64,7 +64,7 @@ const servicesData: ServiceItem[] = [
     id: 'guest-management',
     title: 'Guest Management',
     scope: 'Warm Hospitality',
-    image: '/assets/service-guest-management.jpg',
+    image: '/assets/service-guest-management.webp',
     summary:
       'Welcoming your loved ones with traditional royal hospitality—dhol, flowers, and attentive assistance throughout their stay to make them feel truly cherished.',
     highlights: [
@@ -78,7 +78,7 @@ const servicesData: ServiceItem[] = [
     id: 'catering-menu-planning',
     title: 'Catering & Menu Planning',
     scope: 'Food & Dining',
-    image: '/assets/service-catering-menu.jpg',
+    image: '/assets/service-catering-menu.webp',
     summary:
       'Curating unforgettable wedding feasts featuring authentic Rajasthani delicacies, live food counters, and multi-cuisine menus loved by all your guests.',
     highlights: [
@@ -92,7 +92,7 @@ const servicesData: ServiceItem[] = [
     id: 'entertainment-management',
     title: 'Entertainment Management',
     scope: 'Music & Performances',
-    image: '/assets/service-entertainment.jpg',
+    image: '/assets/service-entertainment.webp',
     summary:
       'Bringing your celebrations to life with folk dancers, soulful live singers, energetic sangeet DJs, and music that keeps the dance floor packed all night.',
     highlights: [

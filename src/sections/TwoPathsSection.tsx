@@ -119,7 +119,7 @@ export const TwoPathsSection: React.FC<TwoPathsSectionProps> = ({ onOpenBooking 
 
               {/* Title & Subtitle */}
               <div>
-                <h3 className="font-serif text-2xl sm:text-3xl text-heritage-charcoal font-normal group-hover:text-heritage-emerald transition-colors">
+                <h3 className="font-serif text-2xl sm:text-5xl text-heritage-charcoal font-normal group-hover:text-heritage-emerald transition-colors">
                   {panelA.title}
                 </h3>
                 <p className="text-xs sm:text-sm text-heritage-gold font-medium mt-1">
@@ -158,7 +158,7 @@ export const TwoPathsSection: React.FC<TwoPathsSectionProps> = ({ onOpenBooking 
                     Session Fee
                   </span>
                   <div className="flex items-baseline gap-2">
-                    <span className="font-serif text-3xl sm:text-4xl font-bold text-heritage-emerald">
+                    <span className="text-3xl sm:text-4xl font-bold text-heritage-emerald">
                       {panelA.priceFormatted}
                     </span>
                     <span className="text-xs text-heritage-muted font-sans">
@@ -212,7 +212,7 @@ export const TwoPathsSection: React.FC<TwoPathsSectionProps> = ({ onOpenBooking 
 
               {/* Title & Subtitle */}
               <div>
-                <h3 className="font-serif text-2xl sm:text-3xl text-white font-normal group-hover:text-heritage-gold transition-colors">
+                <h3 className="font-serif text-2xl sm:text-5xl text-white font-normal group-hover:text-heritage-gold transition-colors">
                   {panelB.title}
                 </h3>
                 <p className="text-xs sm:text-sm text-heritage-gold font-medium mt-1">
@@ -251,7 +251,7 @@ export const TwoPathsSection: React.FC<TwoPathsSectionProps> = ({ onOpenBooking 
                     Session Fee
                   </span>
                   <div className="flex items-baseline gap-2">
-                    <span className="font-serif text-3xl sm:text-4xl font-bold text-white">
+                    <span className="text-3xl sm:text-4xl font-bold text-white">
                       {panelB.priceFormatted}
                     </span>
                     <span className="text-xs text-white/70 font-sans">

@@ -58,13 +58,13 @@ export const ArchLoader: React.FC<ArchLoaderProps> = ({ onLoadingComplete }) => 
           animate={
             isReadyToReveal
               ? {
-                  opacity: 0,
-                  transition: {
-                    duration: 1.5,
-                    ease: [0.33, 1, 0.68, 1], // Smooth cubic-bezier
-                    delay: 0.2, // Let the arch zoom lead before full fade
-                  },
-                }
+                opacity: 0,
+                transition: {
+                  duration: 1.5,
+                  ease: [0.33, 1, 0.68, 1], // Smooth cubic-bezier
+                  delay: 0.2, // Let the arch zoom lead before full fade
+                },
+              }
               : { opacity: 1 }
           }
           onAnimationComplete={handleAnimationComplete}
@@ -77,12 +77,12 @@ export const ArchLoader: React.FC<ArchLoaderProps> = ({ onLoadingComplete }) => 
             animate={
               isReadyToReveal
                 ? {
-                    opacity: 0,
-                    transition: {
-                      duration: 1.4,
-                      ease: [0.33, 1, 0.68, 1],
-                    },
-                  }
+                  opacity: 0,
+                  transition: {
+                    duration: 1.4,
+                    ease: [0.33, 1, 0.68, 1],
+                  },
+                }
                 : { opacity: 1 }
             }
           />
@@ -99,19 +99,19 @@ export const ArchLoader: React.FC<ArchLoaderProps> = ({ onLoadingComplete }) => 
               animate={
                 isReadyToReveal
                   ? {
-                      scale: 4.8,
-                      opacity: 0,
-                      filter: 'blur(6px)',
-                      transition: {
-                        duration: 1.5,
-                        ease: [0.25, 0.1, 0.25, 1], // Continuous cubic ease
-                      },
-                    }
+                    scale: 4.8,
+                    opacity: 0,
+                    filter: 'blur(6px)',
+                    transition: {
+                      duration: 1.5,
+                      ease: [0.25, 0.1, 0.25, 1], // Continuous cubic ease
+                    },
+                  }
                   : {
-                      scale: 1,
-                      opacity: 1,
-                      filter: 'blur(0px)',
-                    }
+                    scale: 1,
+                    opacity: 1,
+                    filter: 'blur(0px)',
+                  }
               }
             >
               <img
@@ -127,19 +127,19 @@ export const ArchLoader: React.FC<ArchLoaderProps> = ({ onLoadingComplete }) => 
               animate={
                 isReadyToReveal
                   ? {
-                      opacity: 0,
-                      scale: 0.8,
-                      filter: 'blur(4px)',
-                      transition: {
-                        duration: 0.45,
-                        ease: 'easeIn',
-                      },
-                    }
+                    opacity: 0,
+                    scale: 0.8,
+                    filter: 'blur(4px)',
+                    transition: {
+                      duration: 0.45,
+                      ease: 'easeIn',
+                    },
+                  }
                   : {
-                      opacity: 1,
-                      scale: 1,
-                      filter: 'blur(0px)',
-                    }
+                    opacity: 1,
+                    scale: 1,
+                    filter: 'blur(0px)',
+                  }
               }
             >
               {/* Luxury SVG Circular Loader */}
@@ -180,7 +180,7 @@ export const ArchLoader: React.FC<ArchLoaderProps> = ({ onLoadingComplete }) => 
 
                 {/* Numerical Counter in Center */}
                 <div className="absolute inset-0 flex items-center justify-center flex-col">
-                  <span className="font-serif text-3xl sm:text-4xl font-bold text-heritage-emerald tracking-tight">
+                  <span className="text-3xl sm:text-4xl font-bold text-heritage-emerald tracking-tight">
                     {progress}
                     <span className="text-sm font-mono font-medium text-heritage-gold ml-0.5">%</span>
                   </span>
@@ -193,7 +193,7 @@ export const ArchLoader: React.FC<ArchLoaderProps> = ({ onLoadingComplete }) => 
                   Curating Royal Experience
                 </span>
                 <span className="text-[10px] font-mono text-heritage-charcoal/60 uppercase tracking-[0.2em] block">
-                  Weddings Vision • Jaipur
+                  Weddings Vision
                 </span>
               </div>
             </motion.div>

@@ -183,7 +183,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({ onOpenBook
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-serif text-xl sm:text-2xl text-white font-normal group-hover:text-heritage-gold transition-colors leading-snug">
+                  <h3 className="text-xl sm:text-2xl text-white font-normal group-hover:text-heritage-gold transition-colors leading-snug">
                     {step.title}
                   </h3>
 
@@ -216,7 +216,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({ onOpenBook
 
         {/* Proof Badge */}
         <div className="text-center pt-2">
-          <div className="inline-flex items-center gap-2 bg-heritage-emerald-deep/90 backdrop-blur-sm px-5 py-2 rounded-full border border-heritage-gold/30 text-xs text-heritage-sand shadow-lg font-sans">
+          <div className="inline-flex items-center gap-2 bg-heritage-emerald-deep/90 backdrop-blur-sm px-5 py-2 rounded-full border border-heritage-gold/30 text-xs text-heritage-sand font-sans">
             <Sparkles className="w-4 h-4 text-heritage-gold shrink-0" />
             <span className="font-light">{howItWorks.proof}</span>
           </div>

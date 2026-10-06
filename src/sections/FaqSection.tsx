@@ -44,9 +44,10 @@ export const FaqSection: React.FC = () => {
           <div className="lg:col-span-5 relative group">
             <div className="relative aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] rounded-3xl overflow-hidden shadow-xl border border-heritage-emerald/15">
               <img
-                src="/assets/service-wedding-planning.jpg"
+                src="/assets/service-wedding-planning.webp"
                 alt="Rajasthan Heritage Wedding Ceremony"
                 loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
               />
 

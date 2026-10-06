@@ -72,13 +72,13 @@
   },
   "howItWorks": {
     "eyebrow": "Simple 3-Step Process",
-    "heading": "How Your Consultation Works",
+    "heading": "How Our Consultation Works",
     "description": "From booking your slot to receiving your custom strategy plan in 3 simple steps.",
     "steps": [
       {
         "stepNum": "01",
         "tag": "Step 1",
-        "title": "Pick Your Slot & Share Your Vision",
+        "title": "Pick Your Slot",
         "description": "Choose a convenient video call time on our calendar and tell us your estimated guest count, preferred dates, and style preferences.",
         "isCta": true,
         "actionText": "Choose Your Slot",
@@ -245,7 +245,7 @@
         "guestCountDisplay": "150 Guests",
         "budgetBracket": "₹50L – ₹80 Lakhs",
         "highlightScope": "Private boat ghat arrivals, antique brass floating mandap, and multi-cuisine royal banquet.",
-        "heroImage": "/assets/Untitled-design-17-700x737.jpg",
+        "heroImage": "/assets/Untitled-design-17-700x737.webp",
         "isPlaceholderData": true,
         "placeholderTag": "[PLACEHOLDER_CASE_STUDY_UDAIPUR]"
       },
@@ -257,7 +257,7 @@
         "guestCountDisplay": "500 Guests",
         "budgetBracket": "₹1.5Cr – ₹2.5 Crore",
         "highlightScope": "Multi-level fortress illumination, Kalbelia welcome procession, and zero budget overages.",
-        "heroImage": "/assets/Untitled-design-18-700x737.jpg",
+        "heroImage": "/assets/Untitled-design-18-700x737.webp",
         "isPlaceholderData": true,
         "placeholderTag": "[PLACEHOLDER_CASE_STUDY_JODHPUR]"
       }
