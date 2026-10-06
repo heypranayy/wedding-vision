@@ -25,83 +25,83 @@
     }
   },
   "twoPaths": {
-    "eyebrow": "The Two Paid Pathways • Highest Priority",
-    "heading": "Choose Your Strategic Entry Point",
-    "description": "Tailored 1-on-1 private video strategy sessions with our senior planners. Every rupee invested is 100% credited toward your full wedding planning management fee.",
+    "eyebrow": "Private Consultations",
+    "heading": "Start With Expert Guidance",
+    "description": "Book a 1-on-1 video session with our senior wedding planners. 100% of your consultation fee is credited back if you choose our full planning service.",
     "panelA": {
       "id": "venue",
-      "tag": "Path A • Venue Scouting",
+      "tag": "Venue Scouting",
       "duration": "60 Minutes",
       "title": "Find My Venue",
-      "subtitle": "Rajasthan Palace & Heritage Resort Advisory",
-      "audience": "Ideal if you have no venue booked yet. Avoid losing lakhs in hidden DG power charges, 10 PM sound fines, and outside vendor royalties.",
+      "subtitle": "Palaces, Forts & Heritage Resorts",
+      "audience": "Best if you haven't booked a venue yet. Get honest advice on pricing, hidden fees, curfew rules, and suitable properties.",
       "deliverables": [
-        "Custom shortlist of 3–5 verified palaces matching your pax & budget",
-        "Hidden surcharge audit: power backups, sound curfew, F&B minimums",
-        "Post-call Executive PDF Dossier + direct vetted sales contacts"
+        "Curated shortlist of 3–5 verified venues fitting your budget & guest count",
+        "Clear breakdown of hidden costs (taxes, power, noise curfews, outside vendors)",
+        "Post-call summary dossier with direct hotel contact details"
       ],
       "priceINR": 2999,
       "priceFormatted": "₹2,999",
-      "priceNote": "(All-Inclusive)",
+      "priceNote": "incl. taxes",
       "creditBadge": "100% Credited",
-      "ctaText": "Book Venue Advisory (₹2,999)"
+      "ctaText": "Book Venue Advisory"
     },
     "panelB": {
       "id": "wedding",
-      "tag": "Path B • Master Strategy",
+      "tag": "Full Blueprint",
       "duration": "90 Minutes",
       "title": "Plan My Wedding",
-      "subtitle": "Comprehensive Wedding Planning Blueprint",
-      "audience": "Ideal if you have a venue or need full financial and aesthetic architecture. We turn vague Pinterest pins into a rigorous, budget-accountable roadmap.",
+      "subtitle": "Complete Planning & Budget Roadmap",
+      "audience": "Best if you already have a venue or need complete clarity on costs, decor vision, and a step-by-step timeline.",
       "deliverables": [
-        "Itemized budget model across 200–800 guests (decor, catering, artists)",
-        "Mandap & celebration styling moodboard uniting heritage with modern lines",
-        "12-Month execution roadmap & recommended vendor matrix"
+        "Realistic budget breakdown across decor, food, entertainment & hospitality",
+        "Theme & styling direction tailored to your taste and celebration scale",
+        "Month-by-month planning checklist and vetted vendor recommendations"
       ],
       "priceINR": 4999,
       "priceFormatted": "₹4,999",
-      "priceNote": "(All-Inclusive)",
+      "priceNote": "incl. taxes",
       "creditBadge": "100% Credited",
-      "ctaText": "Book Planning Blueprint (₹4,999)"
+      "ctaText": "Book Planning Blueprint"
     },
     "proof": {
       "title": "100% Fee Credit Guarantee",
-      "text": "Your session fee is completely credited against our Full Wedding Planning retainer if engaged within 45 days.",
-      "pledge": "Zero Secret Broker Kickbacks"
+      "text": "Your consultation fee is fully credited toward our Full Wedding Planning service if booked within 45 days.",
+      "pledge": "Zero Vendor Markups"
     }
   },
   "howItWorks": {
-    "eyebrow": "Architectural Methodology",
+    "eyebrow": "Simple 3-Step Process",
     "heading": "How Your Consultation Works",
-    "description": "Three disciplined steps engineered to replace guesswork with concrete logistical clarity.",
+    "description": "From booking your slot to receiving your custom strategy plan in 3 simple steps.",
     "steps": [
       {
         "stepNum": "01",
-        "tag": "Click to Start",
-        "title": "Pick Slot & Outline Brief",
-        "description": "Select an available video time slot on our calendar and choose quick chips for your target season and guest count. Takes under 60 seconds.",
+        "tag": "Step 1",
+        "title": "Pick Your Slot & Share Your Vision",
+        "description": "Choose a convenient video call time on our calendar and tell us your estimated guest count, preferred dates, and style preferences.",
         "isCta": true,
-        "actionText": "Select Your Slot Now",
+        "actionText": "Choose Your Slot",
         "serviceType": "venue"
       },
       {
         "stepNum": "02",
-        "tag": "Video Strategy",
-        "title": "1-on-1 Video Session with Senior Planner",
-        "description": "Private Google Meet call with Hemraj or our senior team. We dissect venue contracts, evaluate sound curfew limits, and build your custom budget model.",
-        "footerNote": "Conducted personally • High-definition video",
+        "tag": "Step 2",
+        "title": "1-on-1 Strategy Video Call",
+        "description": "Join a private 60 to 90-minute video session with our senior planner to review venue contracts, cost estimates, and ceremony timelines.",
+        "footerNote": "Conducted on Google Meet • Private 1-on-1",
         "isCta": false
       },
       {
         "stepNum": "03",
-        "tag": "Deliverable",
-        "title": "Receive Executive Strategy Dossier",
-        "description": "Within 24–36 hours, receive a comprehensive PDF with your property shortlist, direct sales POCs, budget allocations, and negotiation clauses.",
-        "footerNote": "Delivered straight to WhatsApp & Email",
+        "tag": "Step 3",
+        "title": "Receive Your Action Plan",
+        "description": "Within 24–48 hours, receive your tailored summary dossier including verified venue shortlists, pricing breakdown, and direct contacts.",
+        "footerNote": "Sent directly via WhatsApp & Email",
         "isCta": false
       }
     ],
-    "proof": "Conducted personally by Senior Planner Hemraj • Over a decade of Jaipur palace logistics"
+    "proof": "Led directly by our senior planning team with 10+ years of Rajasthan wedding expertise"
   },
   "proofStrip": {
     "eyebrow": "Verifiable Client Experiences",
